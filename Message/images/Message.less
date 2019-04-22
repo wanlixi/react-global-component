@@ -1,0 +1,42 @@
+:global(.ant-message-custom-content) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+:global(.ant-message) {
+  z-index: 9999;
+  position: fixed;
+  left: 10%;
+  width: 80%;
+  text-align: center;
+  padding: 6px 0;
+  background: #fff;
+  border-radius: 6px;
+  font-size: 28px;
+}
+:global(.ant-message-custom-content::before) {
+  content: '';
+  width: 32px;
+  height: 32px;
+  margin-right: 10px;
+}
+:global(.ant-message-info::before) {
+  background: url('./images/info.svg') no-repeat;
+  background-size: 100% 100%;
+}
+:global(.ant-message-warning::before) {
+  background: url('./images/warning.svg') no-repeat;
+  background-size: 100% 100%;
+}
+:global(.ant-message-error::before) {
+  background: url('./images/error.svg') no-repeat;
+  background-size: 100% 100%;
+}
+:global(.ant-message-loading::before) {
+  background: url('./images/loading.svg') no-repeat;
+  background-size: 100% 100%;
+}
+:global(.ant-message-success::before) {
+  background: url('./images/right.svg') no-repeat;
+  background-size: 100% 100%;
+}
